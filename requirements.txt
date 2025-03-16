@@ -1,0 +1,16 @@
+boto3
+chroma-hnswlib
+chromadb
+huggingface-hub
+langchain-core
+langchain-text-splitters
+langsmith
+onnxruntime
+python-dotenv
+s3transfer
+sentence-transformers
+setuptools
+tokenizers
+torch
+transformers
+uvicorn

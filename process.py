@@ -1,3 +1,4 @@
+# chroma client processes ingested data to vectors
 import os
 from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
@@ -12,7 +13,7 @@ character_splitter = RecursiveCharacterTextSplitter(
     separators=["\n\n", "\n", ". ", " ", ""], chunk_size=1000, chunk_overlap=0
 )
 
-character_split_texts = character_splitter.split_text("\n\n".join(source))
+character_split_texts = character_splitter.split_text("\n\n".join(seed_data))
 
 token_splitter = SentenceTransformersTokenTextSplitter(
     model_name="sentence-transformers/all-MiniLM-L6-v2",
